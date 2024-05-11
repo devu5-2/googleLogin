@@ -11,7 +11,7 @@ const Homepage = () => {
       
         const newUser = async () => {
           try {
-              const response = await axios.get("https://google-back.vercel.app/login/sucess", { withCredentials: true });
+              const response = await axios.get("https://google-back.vercel.app/login/success", { withCredentials: true });
       
               console.log("response",response)
           } catch (error) {
