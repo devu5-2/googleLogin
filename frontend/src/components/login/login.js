@@ -9,7 +9,7 @@ const Login = () => {
  
     
     const loginwithgoogle = () => {
-        window.open("https://google-login-psi.vercel.app/auth/google/callback", "_self")
+        window.open("https://google-login-b.vercel.app/auth/google/callback", "_self")
     }
     return (
 
