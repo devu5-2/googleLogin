@@ -9,7 +9,7 @@ const OAuth2Strategy = require("passport-google-oauth2").Strategy;
 const userdb = require("./model/userSchema")
 
 const c_id= process.env.clientID
-const c_secret=process.env.clientSecret
+const c_sec=process.env.clientS
 const PORT=process.env.PORT
 
 
@@ -35,7 +35,7 @@ app.use(passport.session());
 passport.use(
     new OAuth2Strategy({
         clientID:c_id,
-        clientSecret:c_secret,
+        clientSecret:c_sec,
         callbackURL:"/auth/google/callback",
         scope:["profile","email"]
     },
