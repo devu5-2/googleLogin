@@ -7,15 +7,14 @@ const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth2").Strategy;
 const userdb = require("./model/userSchema")
-
+PORT=6005
 const c_id= process.env.clientID
 const c_sec=process.env.clientS
-const PORT=process.env.PORT
 
 
 
 app.use(cors({
-    origin:"http://localhost:3002",
+    origin:"https://google-login-psi.vercel.app",
     methods:"GET,POST,PUT,DELETE",
     credentials:true
 }));
@@ -75,8 +74,8 @@ passport.deserializeUser((user,done)=>{
 app.get("/auth/google",passport.authenticate("google",{scope:["profile","email"]}));
 
 app.get("/auth/google/callback",passport.authenticate("google",{
-    successRedirect:"http://localhost:3002/homepage",
-    failureRedirect:"http://localhost:3002/"
+    successRedirect:"https://google-login-psi.vercel.app/homepage",
+    failureRedirect:"https://google-login-psi.vercel.app/"
 }))
 
 app.get("/login/sucess",async(req,res)=>{
@@ -91,7 +90,7 @@ app.get("/login/sucess",async(req,res)=>{
 app.get("/logout",(req,res,next)=>{
     req.logout(function(err){
         if(err){return next(err)}
-        res.redirect("http://localhost:3002/");
+        res.redirect("https://google-login-psi.vercel.app/");
     })
 })
 
