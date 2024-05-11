@@ -11,7 +11,7 @@ const Homepage = () => {
       
         const newUser = async () => {
           try {
-              const response = await axios.get("http://localhost:6005/login/sucess", { withCredentials: true });
+              const response = await axios.get("https://google-back.vercel.app/login/sucess", { withCredentials: true });
       
               console.log("response",response)
           } catch (error) {
@@ -29,7 +29,7 @@ const Homepage = () => {
 
     const getUser = async () => {
         try {
-            const response = await axios.get("http://localhost:6005/login/sucess", { withCredentials: true });
+            const response = await axios.get("https://google-back.vercel.app/login/sucess", { withCredentials: true });
 
             setUserdata(response.data.user)
         } catch (error) {
@@ -39,7 +39,7 @@ const Homepage = () => {
 
     // logoout
     const logout = ()=>{
-        window.open("https://google-login-b.vercel.app/logout","_self")
+        window.open("https://google-back.vercel.app/logout","_self")
     }
 
     useEffect(() => {
