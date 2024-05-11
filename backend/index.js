@@ -7,7 +7,7 @@ const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth2").Strategy;
 const userdb = require("./model/userSchema")
-PORT="https://google-login-b.vercel.app"
+PORT=6005
 const c_id= process.env.clientID
 const c_sec=process.env.clientS
 
