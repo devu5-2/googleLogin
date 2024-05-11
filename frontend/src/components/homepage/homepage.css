@@ -1,0 +1,90 @@
+
+h1{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    color: #fff;
+}
+.bg-gradient p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 900;
+    font-size: larger;
+}
+.navbar p{
+    margin: 21px;
+    font-size: 40px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+.bg-gradient{
+  background: linear-gradient(#e66465, #9198e5);
+  height: 100vh; 
+}
+
+.navigation {
+    background-color: black;
+  }
+  
+  img {
+    width: 50px;
+
+    border-radius: 50px;
+    float: left;
+  }
+  
+  .logout {
+    font-size: .8em;
+    font-family: 'Oswald', sans-serif;
+      position: relative;
+    right: -18px;
+    bottom: -4px;
+    overflow: hidden;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity .45s;
+    -webkit-transition: opacity .35s;
+    
+  }
+  
+  .button {
+      text-decoration: none;
+      float: right;
+    padding: 5px;
+    margin: 1px;
+    color: white;
+    width: 50px;
+    background-color: black;
+    transition: width .35s;
+    -webkit-transition: width .35s;
+    overflow: hidden
+  }
+  
+  a:hover {
+    width: 140px;
+    cursor: pointer;
+    
+  }
+  
+  a:hover .logout{
+    opacity: .9;
+    line-height: 2.5;
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
